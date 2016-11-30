@@ -32,11 +32,19 @@ class Protein:
             self.Peptides[Peptide] = 0
         self.Peptides[Peptide] += 1
 
+    def IsModified(self):
+        #this function simply looks for whether any peptide in this is modified
+        for Peptide in self.Peptides.keys():
+            if '*' in Peptide:
+                return 1
+        return 0 # we got here without returning, so that means no modifications
+
 
 class Organism:
     def __init__(self, Name):
         self.OrganismName = Name
         self.Proteins = {} #key = Accession, value= object
+
 
     def AddPeptide(self, Peptide, ProteinAcc):
         if not ProteinAcc in self.Proteins:
@@ -45,6 +53,17 @@ class Organism:
     def GetProteinCount(self):
         #simply return the number of proteins
         return len(self.Proteins)
+
+    def GetModifiedProteinList(self):
+        #this function retuns a list of ProteinAccessions for all the 
+        #proteins that are modified
+        ToReturn = []
+        for Accession in self.Proteins.keys():
+            ProteinObject = self.Proteins[Accession]
+            if ProteinObject.IsModified():
+                ToReturn.append(Accession)
+
+        return ToReturn
 
 class ParserClass:
 
