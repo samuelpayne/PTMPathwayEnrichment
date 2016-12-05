@@ -65,6 +65,17 @@ class Organism:
 
         return ToReturn
 
+    def GetNotModifiedProteins(self):
+        ToReturn = []
+        for Accession in self.Proteins.keys():
+            ProteinObject = self.Proteins[Accession]
+            if not ProteinObject.IsModified():
+                ToReturn.append(Accession)
+
+        return ToReturn
+
+
+
 class ParserClass:
 
     def __init__(self):

@@ -1,0 +1,45 @@
+Organism	GhostKoalaFiles
+Acidiphilium cryptum JF-5	Acidiphilium_cryptum _JF5.detailed.txt
+Alcaligenes faecalis	Alcaligenes_faecalis.detailed.txt
+Algoriphagus HL-49	HL49_algoriphagus.detailed.txt
+Anaerococcus hydrogenalis DSM 7454	Anaerococcus_hydrogenalis_DSM7454.detailed.txt
+Bacillus cereus ATCC14579	Bacillus_cereus_ATCC14579.detailed.txt
+Bacillus subtilis 168	Bacillus_subtilis_168.detail.txt
+Bacillus subtilis NCIB3610	Bacillus_subtilis_NCIB3610.detailed.txt
+Bacteroides fraglilis 638R	Bacteroides_fraglilis_638R.detailed.txt
+Bacteroides thetaiotaomicron VPI15482	Bacteroides_thetaiotaomicron.detailed.txt
+Bifidobacterium (longum) infantis	Bifidobacterium_longum_infantis.detailed.txt
+Bifidobacterium bifidum	Bifidobacterium_bifidum.detailed.txt
+Campylobacter jejuni F38011	Campylobacter_jejunii.detailed.txt
+Cellulomonas gilvus ATCC 13127	Cellulomonas_gilvus_ATCC13127.detailed.txt
+Cellulophaga baltica 18	Cellulophaga_baltica_18.detailed.txt
+Chryseobacterium indologenes	Chryseobacterium_indologenes.detailed.txt
+Citrobacter freundii UCI31	Citrobacter_freundii.detailed.txt
+Clostridium ljungdahlii DMS 13528 ATCC 55383	Clostridium_ljungdahlii.detailed.txt
+Coprococcus comes ATCC 27758	coprococcus_comes.detailed.txt
+Cyanobacterium staneri HL-69	HL69_Cyanobacterium_staneri.detailed.txt
+Delftia acidovorans	delftia_acidovorans.detailed.txt
+Dorea longicatena DSM13814	Dorea_longicatena.detailed.txt
+Erythrobacter HL-111	HL111_Erythrobacter.detailed.txt
+Faecalibacterium prausnitzii ATCC 27766	Faecalibacterium_prausnitzii.detailed.txt
+Fibrobacter succinogenes S85	Fibrobacter_succinogenes.detailed.txt
+Francisella novicida U112	Francisella_novicida.detailed.txt
+Halomonas HL-48	HL48_Halomonas.detailed.txt
+Halomonas HL-93	HL93_Halomonas.detailed.txt
+Lactobacillus casei ATCC 334	lactobacillus_casei.detailed.txt
+Legionella pneumophila Philadelphia 1	Legionella_pneumophila.detailed.txt
+Micrococcus luteus ATCC 49732	micrococcus_luteus.detailed.txt
+Mycobacterium smegmatis	Mycobacterium_smegmatis.detailed.txt
+Myxococcus xanthus DZ2	myxococcus_xanthus.detailed.txt
+Paenibacillus polymyxa ATCC842	Paenibacillus_polymyxa_ATCC842.detailed.txt
+Paracoccus denitrificans ATCC 19367	Paracoccus_dentrificans.detailed.txt
+Prevotella ruminicola 23 ATCC 19189	Prevotella_ruminicola.detailed.txt
+Pseudomonas putida KT2440 WT	Pseudomonas_putida.detailed.txt
+Rhodopseudomonas palustris CGA009	Rhodopseudomonas_palustris.detailed.txt
+Roseibaca HL-91	HL91_Roseibaca.detailed.txt
+Ruminococcus gnavus ATCC 29149	Ruminococcus_gnavus.detailed.txt
+Stigmatella aurantiaca DW4/3-1	Stigmatella_aurantiaca.detailed.txt
+Streptococcus agalactiae ATCC 27956	Streptococcus_agalactiae.detailed.txt
+Streptomyces venezuelae ATCC 10712	Streptomyces_venezuelae.detailed.txt
+Sulfobacillus thermosulfidooxidans DSMZ 9293	Sulfobacillus_thermosulfidooxidans.detailed.txt
+Synechococcus elongatus PCC 7942	Synechococcus_elongatus_PCC7942.detailed.txt
