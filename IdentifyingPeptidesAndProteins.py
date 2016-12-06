@@ -142,7 +142,6 @@ class ParserClass:
         print("Associating %s files from %s organisms"%(FileCounter, OrganismCounter))
 
     def ParsePSMFile(self, Path, OrganismName):
-
         Org = self.OrganismObjectsDictionary[OrganismName]
         Handle = open(Path, 'r')
         Header = Handle.readline()
