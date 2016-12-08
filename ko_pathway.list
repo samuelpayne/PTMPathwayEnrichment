@@ -18607,3 +18607,12 @@ ko:K20320	path:map01501	beta-Lactam resistance
 ko:K20370	path:map00620	Pyruvate metabolism
 ko:K20370	path:map01100	Metabolic pathways
 ko:K20394	path:map04211	Longevity regulating pathway
+ko:K00260	path:shp00001	Urea cycle
+ko:K00261	path:shp00001	Urea cycle
+ko:K00262	path:shp00001	Urea cycle
+ko:K00611	path:shp00001	Urea cycle
+ko:K01476	path:shp00001	Urea cycle
+ko:K01755	path:shp00001	Urea cycle
+ko:K01940	path:shp00001	Urea cycle
+ko:K01948	path:shp00001	Urea cycle
+ko:K14681	path:shp00001	Urea cycle
