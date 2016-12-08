@@ -85,7 +85,7 @@ class ParserClass:
         self.QvalueCutoff = 0.001
         self.OrganismObjectsDictionary = {} #key = Name, value= object
         self.FileToOrganismDictionary = {} #key = PSM file stub, value = organism
-        self.OutputPath = "renameYourOutput.txt"
+
 
     def GetOrganismObjects(self):
         return self.OrganismObjectsDictionary
@@ -95,6 +95,7 @@ class ParserClass:
         self.QvalueCutoff = qvalue
 
     def Main(self):
+        
         #0. Figure out which PSM files belong with which organisms
         self.ParseFileToOrganism(self.FileToOrganismsPath)
         #1. parse all the PSM files just putting peptides into proteins
@@ -107,6 +108,7 @@ class ParserClass:
             FileStub = os.path.splitext(Item)[0] #gets the root filename, and removes the extension
             #have to do some more cleanup to get back a good file name
             FileStub = FileStub.replace("_msgfdb_fht", "")
+            FileStub = FileStub.replace("_msgfplus_fht", "")
             if not FileStub in self.FileToOrganismDictionary:
                 print ("Can't associate this file %s with an organism."%Item)
                 print ("In directory %s, but not listed in association file %s"%(self.DirectoryOfPSMs, self.FileToOrganismsPath))
@@ -115,6 +117,8 @@ class ParserClass:
             if not os.path.isfile(Path):
                 continue
             self.ParsePSMFile(Path, OrganismName)
+        
+
 
     def ParseFileToOrganism(self, Path):
         #simple populating the FileToOrganismDictionary variable so that we can use this knowledge later on
@@ -139,9 +143,10 @@ class ParserClass:
                 File = File.strip()
                 self.FileToOrganismDictionary[File] = OrganismName
                 FileCounter += 1
-        print("Associating %s files from %s organisms"%(FileCounter, OrganismCounter))
+        print("The associations file listed %s psm results files from %s organisms"%(FileCounter, OrganismCounter))
 
     def ParsePSMFile(self, Path, OrganismName):
+        #print ("parsing %s"%Path)
         Org = self.OrganismObjectsDictionary[OrganismName]
         Handle = open(Path, 'r')
         Header = Handle.readline()
@@ -165,6 +170,7 @@ class ParserClass:
             ## sp|P54547|G6PD_BACSU
             ## ref|YP_001233830.1
             ## tr|J0JN52|J0JN52_ALCFA
+            #print ("adding %s to %s"%(peptide, protein))
             Org.AddPeptide(peptide, protein)
 
 
