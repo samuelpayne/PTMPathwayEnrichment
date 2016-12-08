@@ -70,6 +70,7 @@ class CreatorClass:
         ko:K00001   path:map00625   Chloroalkane and chloroalkene degradation
         """
         Handle = open(Path, 'r')
+        Header = Handle.readline() #pop it off.
         for Line in Handle:
             (KO_precursor, Path_precursor, Path_Description) = Line.strip().split("\t")
             KO = KO_precursor.replace("ko:", "")
