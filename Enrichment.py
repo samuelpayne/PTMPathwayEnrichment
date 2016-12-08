@@ -4,8 +4,9 @@ import scipy.stats as stats
 class PathwayEnrichment:
     #mostly a convenience class for making plots. Could all be done with a set
     #of embedded dictionaries. But no one likes those.
-    def __init__(self, PathwayName):
-        self.PathwayName = PathwayName
+    def __init__(self, PathwayID, PathwayDescription):
+        self.PathwayID = PathwayID # the kegg identifier
+        self.PathwayDescription = PathwayDescription #more of 'glycolysis'
         self.EnrichmentByOrg = {} #key = organism name, value = pvalue
     def GetEnrichmentList(self):
         #return just a simple list of the pvalues, stripped from the association with an organism
